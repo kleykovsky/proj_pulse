@@ -1,0 +1,48 @@
+.plus {
+    min-height: 470px;
+    padding: 70px 0 78px 0;
+    &__header {
+        text-align: center;
+        h2 {
+            color: #0d0d0d;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+    &__wrapper {
+        margin-top: 65px;
+    }
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__icon {
+        img {
+            display: block;
+            width: 70px;
+            margin: 0 auto;
+        }
+    }
+    &__text {
+        text-align: center;
+        margin-top: 38px;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__subtext {
+        display: block;
+        width: 247px;
+        margin-top: 25px;
+        text-align: center;
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 300;
+        span {
+            color: $main-color;
+            text-decoration: underline;
+            font-weight: 400;
+        }
+    }
+}
