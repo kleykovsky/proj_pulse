@@ -5,8 +5,11 @@
 .container {
 	max-width: 950px;
 	margin: 0 auto;
+	padding-left: 10px;
+    padding-right: 10px;
 }
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/plus';
+@import 'blocks/media.scss';

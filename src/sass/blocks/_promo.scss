@@ -22,9 +22,9 @@
         margin-top: 17px;
     }
     &__icons {
+        display: flex;
         margin-top: 67px;
         width: 425px;
-        display: flex;
         justify-content: space-between;
     }
     &__icon {
