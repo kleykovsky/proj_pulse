@@ -2,14 +2,6 @@
     min-height: 470px;
     padding: 70px 0 78px 0;
     background-color: #f6f6f6;
-    &__header {
-        text-align: center;
-        h2 {
-            color: #0d0d0d;
-            font-size: 30px;
-            font-weight: 700;
-        }
-    }
     &__wrapper {
         margin-top: 65px;
     }
@@ -25,14 +17,14 @@
             margin: 0 auto;
         }
     }
-    &__text {
+    &__descr {
         text-align: center;
         margin-top: 38px;
         color: #0d0d0d;
         font-size: 18px;
         font-weight: 700;
     }
-    &__subtext {
+    &__subdescr {
         display: block;
         width: 247px;
         margin-top: 25px;

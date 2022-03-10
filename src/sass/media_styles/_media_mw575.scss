@@ -11,11 +11,12 @@
         }
         &__header {
             text-align: center;
-            font-size: 25px;
+            font-size: 20px;
         }
         &__subheader{
             text-align: center;
             margin-top: 5px;
+            font-size: 15px;
         }
         &__icons {
             flex-direction: column;
@@ -30,11 +31,7 @@
             }
         }
     }
-    .plus {
-        &__header {
-            h2 {
-                font-size: 20px;
-            }
-        }
-    }
+    .title {
+        font-size: 18px;
+    }  
 }
