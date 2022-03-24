@@ -1,5 +1,5 @@
 .consultation {
-    min-height: 680px;
+    max-height: 100%;
     padding: 100px 0 92px 0;
     background: url(../img/bg/bg2.png) center (center/cover) no-repeat;
     &__descr {
@@ -8,6 +8,6 @@
         font-weight: 400;
         line-height: normal;
         margin-top: 80px;
-        text-align: left;
     }
 }
+

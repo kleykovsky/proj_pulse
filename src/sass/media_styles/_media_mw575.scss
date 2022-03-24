@@ -6,6 +6,7 @@
         }
     }
     .promo {
+        // min-height: 100%;
         &__wrapper {
             margin-top: 20px;
         }
@@ -31,7 +32,19 @@
             }
         }
     }
+    .consultation {
+        // min-height: 100%;
+        &__descr {
+            font-size: 18px;
+        }
+    }
     .title {
         font-size: 18px;
-    }  
+        &_left {
+            font-size: 18px;
+        }
+    }
+    .sm-hidden {
+        display: none;
+    }
 }

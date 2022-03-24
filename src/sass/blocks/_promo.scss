@@ -1,5 +1,5 @@
 .promo {
-    min-height: 650px;
+    max-height: 100%;
     padding: 21px 0 93px 0;
     background: url(../img/bg/bg1.png) center (center/cover) no-repeat;
     &__wrapper {
@@ -13,6 +13,7 @@
         font-size: 42px;
         font-weight: 400;
         text-transform: uppercase;
+        margin-bottom: 0;
     }
     &__subheader {
         color: #ffffff;
@@ -20,6 +21,7 @@
         font-weight: 400;
         text-transform: uppercase;
         margin-top: 17px;
+        margin-bottom: 0;
     }
     &__icons {
         display: flex;

@@ -1,0 +1,53 @@
+.carousel {
+	padding: 81px 0;
+	&__inner {
+		position: relative;
+		width: 750px;
+		margin: 0 auto;
+		
+	}
+	.prev, .next {
+		position: absolute;
+		border: none;
+		background: none;
+		top: 50%;
+		transform: translateY(-50%);
+		// left: -50px;
+		// z-index: 2;
+		&:hover {
+			border-radius: 5px;
+			outline: 3px;
+			outline-style: solid;
+			outline-color: rgba(207, 35, 4, 0.877);
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+	.next {
+		right: 10px;
+	}
+	.tns-item {
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 80%;
+		}
+	}
+	// навигация на слайдере tuny (точки)
+	// .tns-nav {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	button {
+	// 		width: 30px;
+	// 		height: 10px;
+	// 		border-radius: 10px;
+	// 		margin-right: 3px;
+	// 		background-color: #fff;
+	// 		padding: 0;
+	// 		border: 3px solid rgba(48, 49, 49, 0.692);
+	// 	}
+	// 	.tns-nav-active {
+	// 		border-color: rgba(207, 35, 4, 0.877);
+	// 	}
+}
