@@ -8,7 +8,6 @@
 		list-style: none;
 		margin-bottom: 0;
 		padding-left: 0;
-		
 	}
 	&__tab {
 		width: 220px;
@@ -28,7 +27,6 @@
 		&:hover {
 			box-shadow: 3px 3px 20px;
 			border: none;
-			
 		}
 		div {
 			transform: skewX(25deg);
@@ -41,7 +39,7 @@
 	}
 	&__content {
 		display: none;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		flex-wrap: wrap;
 		margin-top: 60px;
 		&_active {

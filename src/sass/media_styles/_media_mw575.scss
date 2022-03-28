@@ -5,6 +5,9 @@
             margin-top: 15px;
         }
     }
+    .sm-hidden {
+        display: none;
+    }
     .promo {
         // min-height: 100%;
         &__wrapper {
@@ -44,7 +47,27 @@
             font-size: 18px;
         }
     }
-    .sm-hidden {
-        display: none;
+    .carousel {
+        padding: 30px 0;
+        .prev, .next {
+            display: none;
+        }
+        .tns-nav {
+            display: flex;
+            margin-top: 10px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        &__tab {
+            margin-bottom: 10px;
+        }
+        &__content {
+            justify-content: center;
+            margin-top: 10px;
+        }
     }
 }

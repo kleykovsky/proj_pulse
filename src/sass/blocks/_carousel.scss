@@ -34,20 +34,21 @@
 			width: 80%;
 		}
 	}
-	// навигация на слайдере tuny (точки)
-	// .tns-nav {
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	button {
-	// 		width: 30px;
-	// 		height: 10px;
-	// 		border-radius: 10px;
-	// 		margin-right: 3px;
-	// 		background-color: #fff;
-	// 		padding: 0;
-	// 		border: 3px solid rgba(48, 49, 49, 0.692);
-	// 	}
-	// 	.tns-nav-active {
-	// 		border-color: rgba(207, 35, 4, 0.877);
-	// 	}
+	// навигация на слайдере - tiny (точки)
+	.tns-nav {
+		display: none;
+		justify-content: center;
+		button {
+			width: 30px;
+			height: 10px;
+			border-radius: 10px;
+			margin: 0 3px 0 3px;
+			background-color: #fff;
+			padding: 0;
+			border: 3px solid rgba(48, 49, 49, 0.692);
+		}
+		.tns-nav-active {
+			border-color: rgba(207, 35, 4, 0.877);
+		}
+	}
 }
