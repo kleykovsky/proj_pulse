@@ -6,8 +6,8 @@
 	position: relative;
 	max-width: 950px;
 	margin: 0 auto;
-	padding-left: 10px;
-    padding-right: 10px;
+	padding-left: 5px;
+    padding-right: 5px;
 }
 @import 'base/variables';
 @import 'blocks/promo';
@@ -19,5 +19,7 @@
 @import 'blocks/forms';
 @import 'blocks/carousel';
 @import 'blocks/catalog';
+@import 'blocks/comments';
+@import 'blocks/footer';
 @import 'media_styles/media_mw767';
 @import 'media_styles/media_mw575';

@@ -11,6 +11,7 @@
         &__wrapper {
 			margin-top: 40px;
             align-items: center;
+			
         }
 		&__header {
 			font-size: 28px;
@@ -22,6 +23,7 @@
 			margin-top: 40px;
 			width: 100%;
 			justify-content: center;
+			
 		}
 		&__icon {
 			margin: 0 35px 0 35px;
@@ -62,15 +64,57 @@
 			margin-top: 40px;
 		}
 	}
+	.carousel {
+		padding: 40px 0;
+	}
 	.title {
 		font-size: 23px;
 		&_left {
 			text-align: center;
 			font-size: 23px;
 		}
+		&_commit {
+			margin-bottom: 30px;
+		}
 	}
 	.feed-form {
 		margin: 0 auto;
 		margin-top: 30px;
+	}
+	.catalog {
+		padding-bottom: 40px;
+		&__tabs {
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+		&__tab {
+			margin-bottom: 10px;
+		}
+		&__tab_mbn {
+			margin: 0 5px 0 5px;
+		}
+		&__content {
+			justify-content: space-around;
+			margin-top: 40px;
+		}
+	}
+	.comment {
+		&__content {
+			margin-left: 0;
+			padding: 0 20px 0 20px;			
+		}
+		&__item {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__title-name {
+			text-align: center;
+		}
+		&__subtitle {
+			text-align: center;
+		}
+		&__descr {
+			text-align: justify;
+		}
 	}
 }
