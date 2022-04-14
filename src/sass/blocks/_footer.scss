@@ -1,47 +1,97 @@
 .footer {
-    min-height: 630px;
-    position: relative;
-    &__info {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 460px;
-        height: 270px;
-        background-color: $main-color;
-        padding: 50px 68px 50px 68px;
-        }
-    &__addr {
-        margin-bottom: 36px;
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: 500;
-        text-align: center;
-    }
-    &__phone {
-        display: block;
-        margin-bottom: 38px;
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: 500;
-        text-align: center;
-        text-decoration: none;
-    }
-    &__social {
-        display: flex;
-        justify-content: center;
-    }
-    &__social-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        border: 2px solid #ffffff;
-        margin: 0 15px 0 15px;
-        border-radius: 100%;
-        img {
-            background-color: none;
-        }
-    }
+  	height: 630px;
+  	position: relative;
+  	&__info {
+		position: absolute;
+		width: 460px;
+		height: 270px;
+		background-color: $main-color;
+		top: 0;
+		left: calc(50% - 230px);
+		padding: 50px 68px 50px 68px;
+		border-radius: 15px;
+  	}
+	&__addr {
+		margin-bottom: 36px;
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 20px;
+		text-align: center;
+	}
+	&__phone {
+		display: block;
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin-bottom: 38px;
+		&:hover {
+			color: #ffff;
+			text-decoration: underline;
+		}
+	}
+	&__social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__social-item {
+		display: flex;
+		width: 50px;
+		height: 50px;
+		border: 2px solid #ffffff;
+		border-radius: 100%;
+		justify-content: center;
+		align-items: center;
+		margin: 0 15px;
+		img {
+			height: 26px;
+		}
+	}
+	&__screw {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border: solid 2px rgb(137, 136, 136);
+		border-radius: 100%;
+		&::before {
+			display: block;
+			position: relative;
+			content: '';
+			height: 2px;
+			width: 18px;
+			border: solid 1px rgb(137, 136, 136);
+			background-color: rgb(137, 136, 136);
+			top: calc(50% - 1px);
+			transform: rotate(10deg);
+		}
+		&_1 {
+			left: 3%;
+			bottom: 88%;
+		}
+		&_2 {
+			right: 3%;
+			bottom: 88%;
+			&::before {
+				transform: rotate(50deg);
+			}
+		}
+		&_3 {
+			left: 3%;
+			top: 88%;
+			&::before {
+				transform: rotate(-40deg);
+			}
+		}
+		&_4 {
+			right: 3%;
+			top: 88%;
+			&::before {
+				transform: rotate(-10deg);
+			}
+		}
+	}
 }

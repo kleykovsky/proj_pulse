@@ -117,4 +117,15 @@
 			text-align: justify;
 		}
 	}
+	.footer {
+		&__info_visible {
+			display: none;
+		}
+		&__info_hidden {
+		position: relative;
+		width: 100%;
+		height: 80px;
+		background-color: $main-color;
+		}
+	}
 }
