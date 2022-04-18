@@ -17,11 +17,15 @@
             margin-bottom: 20px;
         }
         &:hover {
-            background-color: rgba(189, 43, 43, 0.527);
+            background-color: rgba(189, 43, 43, 0.4);
             
         &:valid {
-            background-color: rgba(43, 189, 43, 0.527);
+            background-color: rgba(43, 189, 43, 0.4);
             }
         }
+    }
+    &_mt25 {
+        margin: 0 auto;
+        margin-top: 25px;
     }
 }

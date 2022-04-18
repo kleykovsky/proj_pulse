@@ -6,11 +6,16 @@
 		width: 460px;
 		height: 270px;
 		background-color: $main-color;
-		top: 0;
-		left: calc(50% - 230px);
-		padding: 50px 68px 50px 68px;
-		border-radius: 15px;
+		&_visible {
+			top: 0;
+			left: calc(50% - 230px);
+			padding: 50px 68px 50px 68px;
+			border-radius: 15px;
+		}
   	}
+	&__info_hidden {
+		display: none;
+	}
 	&__addr {
 		margin-bottom: 36px;
 		color: #ffffff;

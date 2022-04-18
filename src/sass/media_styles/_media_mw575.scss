@@ -70,4 +70,29 @@
             margin-top: 10px;
         }
     }
+    .modal{
+        width: 250px;
+        min-height: 350px;
+        padding: 20px 10px;
+        &__close {
+            left: calc(100% + 5px);
+        }
+    }
+    .title_modal {
+        font-size: 16px;
+    }
+    .feed-form {
+        width: 200px;
+        
+        margin-top: 20px;
+        input {
+            height: 40px;
+            padding: 0 10px;
+            font-size: 12px;
+        }
+    }
+    .button_submit {
+        font-size: 13px;
+        height: 50px;
+    }
 }

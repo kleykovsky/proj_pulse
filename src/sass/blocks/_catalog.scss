@@ -30,7 +30,6 @@
 		}
 		div {
 			transform: skewX(25deg);
-			
 
 		}
 		&_active {
@@ -46,6 +45,7 @@
 		margin-top: 60px;
 		&_active {
 			display: flex;
+			border-radius: 10px;
 		}
 	}
 	&-item {
@@ -55,7 +55,9 @@
 		background-color: #ffffff;
 		padding: 18px 20px 26px 20px;
 		overflow: hidden;
-		margin-bottom: 20px;
+		margin: 10px 0;
+		border-radius: 10px;
+		box-shadow: 0px 0px 20px;
 		&__img {
 			display: block;
 			margin: 0 auto;

@@ -24,7 +24,7 @@
 					</div>
 					<div class="header__contacts">
 					<a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-					<button class="button button_header sm-hidden">заказать звонок</button>       
+					<button data-modal="consultation" class="button button_header sm-hidden">заказать звонок</button>       
 					</div>
 				</header>
 				<div class="promo__wrapper">
@@ -42,10 +42,10 @@
 							Ответим
 							на все вопросы</div>
 					</div>
-					<button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+					<button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
 					<div class="promo__link">
 						или
-						<a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+						<a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
 					</div>
 				</div>
 			</div>
@@ -101,7 +101,7 @@
 					<br>и мы перезвоним вам в течении 10 минут
 				</div>
 				<form action="#" class="feed-form">
-					<input name="name" type="text" required placeholder="Ваше имя" minlength="3" >
+					<input name="name" type="text" required placeholder="Ваше имя" minlength="2" >
 					<input name="phone" type="tel" pattern="[0-9]{9,12}" required placeholder="Ваш номер телефона c кодом">
 					<input name="email" type="email" required placeholder="Ваш E-mail">
 					<button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
@@ -125,7 +125,7 @@
 				<button type="button" class="next"><img src="icons/chevron/right.svg" alt=""></button>
 			</div>
 		</section>
-		<section class="catalog">
+		<section class="catalog" id="catalog">
 			<div class="container">
 				<h2 class="title">Каталог пульсометров</h2>
 				<ul class="catalog__tabs">
@@ -731,7 +731,7 @@
 			<div class="footer__map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1587.0151764971233!2d37.64576359299759!3d55.76929983242064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2s!4v1649746322573!5m2!1sru!2s" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
-			<div class="footer__info footer__info_visible footer__info_hidden">
+			<div class="footer__info footer__info_visible">
 				<address class="footer__addr">
 					Москва, Мясницкий проезд, д.3с1
 				</address>
@@ -761,7 +761,7 @@
 				<a href="tel:84999228974" class="footer__phone">
 					8 (499) 922-89-74
 				</a>
-				<div class="footer__social foot">
+				<div class="footer__social">
 					<a href="#" class="footer__social-item">
 						<img src="img/social/facebook.png" alt="facebook">
 					</a>
@@ -772,13 +772,56 @@
 						<img src="img/social/pinterest.png" alt="pinterest">
 					</a>
 				</div>
-				<div class="footer__screw footer__screw_1"></div>
-				<div class="footer__screw footer__screw_2"></div>
-				<div class="footer__screw footer__screw_3"></div>
-				<div class="footer__screw footer__screw_4"></div>
 			</div>
 		</footer>
+		<div class="overlay">
+			<div class="modal" id="consultation">
+				<div class="modal__close">&times;</div>
+				<h3 class="title title_modal">
+					Просто заполните форму заявки
+				</h3>
+				<div class="modal__descr">
+					и мы перезвоним вам в течении 10 минут
+				</div>
+				<form action="#" class="feed-form feed-form_mt25">
+					<input name="name" type="text" required placeholder="Ваше имя" minlength="3" >
+					<input name="phone" type="tel" pattern="[0-9]{9,12}" required placeholder="Ваш номер телефона c кодом">
+					<input name="email" type="email" required placeholder="Ваш E-mail">
+					<button class="button button_submit">
+						заказать кОНСУЛЬТАЦИЮ
+					</button>
+				</form>
+			</div>
+			<div class="modal modal_order" id="order">
+				<div class="modal__close">&times;</div>
+				<h3 class="title title_modal">
+					Ваш заказ:
+				</h3>
+				<div class="modal__descr">
+					Пульсометр Polar FT1
+				</div>
+					<form action="#" class="feed-form feed-form_mt25">
+					<input name="name" type="text" required placeholder="Ваше имя" minlength="3" >
+					<input name="phone" type="tel" pattern="[0-9]{9,12}" required placeholder="Ваш номер телефона c кодом">
+					<input name="email" type="email" required placeholder="Ваш E-mail">
+					<button class="button button_submit">
+						купить
+					</button>
+				</form> 
+			</div>
+			<div class="modal" id="thanks">
+				<div class="modal__close">&times;</div>
+				<h3 class="title title_modal">
+					Спасибо за вашу заявку!
+				</h3>
+				<div class="modal__descr">
+					Наш менеджер свяжется с вами
+					в ближайшее время!
+				</div>
+			</div>
+		</div>
 	</main>
+	<!-- <script src="js/jquery.validate.min.js"></script> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/tiny-slider.js"></script>
 	<script src="js/script.js"></script>

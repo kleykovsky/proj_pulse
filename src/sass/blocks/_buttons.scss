@@ -5,6 +5,9 @@
     font-weight: 500;
     color: #ffffff;
     text-transform: uppercase;
+    &:hover {
+        transform: scale(1.05);
+    }
     &_header {
         width: 150px;
         height: 30px;
