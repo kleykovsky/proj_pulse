@@ -10,7 +10,9 @@
 		controls: false,
 		autoplay: false,
 	});
-	// Навигация slider блока право, лево (кнопки)
+	// Навигация slider блока,
+	// на jquery лево, право (кнопки)
+	
 	document.querySelector('.prev').addEventListener('click', function () {
 		slider.goTo('prev');
 	});
@@ -51,8 +53,8 @@ function toggleSlide(item) {
 			});
 		});
 	}
-toggleSlide('.catalog-item__link');
-toggleSlide('.catalog-item_back');
+	toggleSlide('.catalog-item__link');
+	toggleSlide('.catalog-item_back');
 	//Modal windows JS
 	$('[data-modal=consultation]').on('click', function() {
 		$('.overlay, #consultation').fadeIn('slow');
@@ -66,6 +68,24 @@ toggleSlide('.catalog-item_back');
 	$('.modal__close').on('click', function() {
 		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
 	});
-	//validate form
-	// $('.feed-form').validate();
-	// $('#consultation form').validate();
+	//validate form jqery
+	$('#consultation-form').validate();
+	$('#consultation form').validate({
+		rules: {
+			name: 'required',
+			phone: 'required',
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			name: "Пожалуйста, введите своё имя",
+			phone: "Пожалуйчта, введите свой номер телефона",
+			email: {
+			  required: "Подалуйста, введите свою почту",
+			  email: "Неправильно введен адрес почты"
+			}
+		}
+	});
+	$('#order form').validate();
