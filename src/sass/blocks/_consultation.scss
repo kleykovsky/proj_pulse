@@ -9,5 +9,10 @@
         line-height: normal;
         margin-top: 80px;
     }
+    label.error {
+		color: $main-color;
+		text-align: center;
+		margin-bottom: 15px;
+	}
 }
 

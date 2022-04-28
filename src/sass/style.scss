@@ -1,3 +1,5 @@
+@import 'base/variables';
+@import 'base/animations';
 * {
 	font-family: 'Museo Sans Cyrl', sans-serif;
 }
@@ -9,6 +11,7 @@
 	padding-left: 5px;
     padding-right: 5px;
 }
+
 @import 'base/variables';
 @import 'blocks/promo';
 @import 'blocks/header';
@@ -22,5 +25,6 @@
 @import 'blocks/comments';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
 @import 'media_styles/media_mw767';
 @import 'media_styles/media_mw575';

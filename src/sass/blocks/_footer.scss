@@ -52,6 +52,11 @@
 		justify-content: center;
 		align-items: center;
 		margin: 0 15px;
+		&:hover {
+			transition: 0.5s all;
+			transform: scale(1.2);
+			box-shadow: 0px 0px 10px black;
+		}
 		img {
 			height: 26px;
 		}
@@ -60,23 +65,25 @@
 		position: absolute;
 		width: 20px;
 		height: 20px;
-		border: solid 2px rgb(137, 136, 136);
+		border: solid 2px rgb(55, 55, 55);
 		border-radius: 100%;
-		box-shadow: 0px 0px 5px;
+		box-shadow: 0px 0px 8px;
+		background-color: rgb(103, 102, 102);
 		&::before {
 			display: block;
 			position: relative;
 			content: '';
 			height: 2px;
 			width: 18px;
-			border: solid 1px rgb(137, 136, 136);
-			background-color: rgb(137, 136, 136);
+			border: solid 1px rgb(55, 55, 55);
+			background-color: rgb(55, 55, 55);
 			top: calc(50% - 1px);
-			transform: rotate(10deg);
+			
 		}
 		&_1 {
 			left: 3%;
 			bottom: 88%;
+			transform: rotate(10deg);
 		}
 		&_2 {
 			right: 3%;

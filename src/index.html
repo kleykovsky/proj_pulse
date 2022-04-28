@@ -12,7 +12,7 @@
 </head>
 <body>
 	<main>
-		<section class="promo">
+		<section id="up" class="promo">
 			<div class="container">
 				<header class="header">
 					<a href="#" class="header__logo">
@@ -58,7 +58,7 @@
 				<div class="plus__wrapper">
 					<div class="plus__icons">
 						<div class="plus__icon">
-							<img src="icons/cup.png" alt="">
+							<img class="img img_cup" src="icons/cup.png" alt="">
 							<div class="plus__descr">
 								Делимся опытом                        
 							</div>
@@ -67,7 +67,7 @@
 								так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!                
 							</div>
 							</div>
-						<div class="plus__icon"><img src="icons/heart.png" alt="">
+						<div class="plus__icon"><img class="img img_heart" src="icons/heart.png" alt="heart">
 							<div class="plus__descr">
 								Заботимся о здоровье
 							</div>
@@ -76,7 +76,7 @@
 								чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
 							</div>
 						</div>
-						<div class="plus__icon"><img src="icons/shoe.png" alt="">
+						<div class="plus__icon"><img class="img img_shoe" src="icons/shoe.png" alt="">
 							<div class="plus__descr">
 								Учим бегать
 							</div>
@@ -101,9 +101,9 @@
 					<br>и мы перезвоним вам в течении 10 минут
 				</div>
 				<form action="#" id="consultation-form" class="feed-form">
-					<input name="name" type="text" placeholder="Ваше имя" minlength="2">
-					<input name="phone" type="tel" pattern="[0-9]{9,12}" placeholder="Ваш номер телефона c кодом">
-					<input name="email" type="email" placeholder="Ваш E-mail">
+					<input name="name" type="text" required placeholder="Ваше имя" minlength="2">
+					<input name="phone" required placeholder="Ваш номер телефона c кодом" minlength="9">
+					<input name="email" type="email" required placeholder="Ваш E-mail">
 					<button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
 				</form>                
 			</div>
@@ -784,8 +784,8 @@
 					и мы перезвоним вам в течении 10 минут
 				</div>
 				<form action="#" class="feed-form feed-form_mt25">
-					<input name="name" type="text" required placeholder="Ваше имя" minlength="3" >
-					<input name="phone" type="tel" pattern="[0-9]{9,12}" required placeholder="Ваш номер телефона c кодом">
+					<input name="name" type="text" required placeholder="Ваше имя" minlength="2">
+					<input type="tel" name="phone" required placeholder="Ваш номер телефона c кодом" minlength="9">
 					<input name="email" type="email" required placeholder="Ваш E-mail">
 					<button class="button button_submit">
 						заказать кОНСУЛЬТАЦИЮ
@@ -801,8 +801,8 @@
 					Пульсометр Polar FT1
 				</div>
 					<form action="#" class="feed-form feed-form_mt25">
-					<input name="name" type="text" required placeholder="Ваше имя" minlength="3" >
-					<input name="phone" type="tel" pattern="[0-9]{9,12}" required placeholder="Ваш номер телефона c кодом">
+					<input name="name" type="text" required placeholder="Ваше имя" minlength="2">
+					<input name="phone" type="tel" required placeholder="Ваш номер телефона c кодом" minlength="9">
 					<input name="email" type="email" required placeholder="Ваш E-mail">
 					<button class="button button_submit">
 						купить
@@ -820,10 +820,14 @@
 				</div>
 			</div>
 		</div>
+		<a href="#up" class="pageup">
+			<img src="img/up.svg" alt="up">
+		</a>
 	</main>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/tiny-slider.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

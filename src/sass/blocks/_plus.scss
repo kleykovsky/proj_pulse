@@ -11,12 +11,34 @@
         justify-content: space-around;
     }
     &__icon {
-        img {
+        .img {
             display: block;
             width: 70px;
             margin: 0 auto;
+            &_heart {
+                //комплексное свойства стиля
+                animation: heartbeat 1.8s ease infinite;
+                // animation-name: heartbeat;
+                // animation-duration: 1.8s;
+                // animation-timing-function: ease;
+                // animation-iteration-count: infinite;
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+            &_shoe {
+                transform: rotate(300deg);
+                animation: shoerun 1.8s ease infinite;
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+            &_cup {
+                transform: rotate(-20deg);
+                animation: cup 1.8s linear infinite;
+            }
         }
-    }
+    }   
     &__descr {
         text-align: center;
         margin-top: 38px;

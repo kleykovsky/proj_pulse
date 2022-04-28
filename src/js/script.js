@@ -68,24 +68,64 @@ function toggleSlide(item) {
 	$('.modal__close').on('click', function() {
 		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
 	});
-	//validate form jqery
-	$('#consultation-form').validate();
-	$('#consultation form').validate({
-		rules: {
-			name: 'required',
-			phone: 'required',
-			email: {
-				required: true,
-				email: true
+	//validate form jqery (созд. функ)
+	function validateForms(form){
+		$(form).validate({
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
+				  },
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: {
+					required: "Пожалуйста, введите своё имя",
+					minlength: jQuery.validator.format("Ваше имя должно содержать не меньше двух {0} символов! ")
+				},
+				phone: "Пожалуйста, введите свой номер телефона с кодом!",
+				email: {
+					  required: "Пожалуйста, введите свою почту",
+					 email: "Неправильно введен адрес почты"
+				}
 			}
-		},
-		messages: {
-			name: "Пожалуйста, введите своё имя",
-			phone: "Пожалуйчта, введите свой номер телефона",
-			email: {
-			  required: "Подалуйста, введите свою почту",
-			  email: "Неправильно введен адрес почты"
-			}
+		});
+	};
+	// 3 type forms
+	validateForms('#consultation-form');
+	validateForms('#consultation form');
+	validateForms('#order form');
+	// Masks
+	$('input[name=phone]').mask("+(99)-999-99-99");
+	$('form').submit(function(e){
+		e.preventDefault();
+	//Если форма не прошла валидацию
+		if (!$(this).valid()){
+			return;
+		}
+	//Запрос на сервер(отправка данных на почту)
+		$.ajax({
+			type: 'POST',
+			url: 'mailer/smart.php',
+			data: $(this).serialize()
+		}).done(function(){
+			$(this).find('input').val('');
+		//Очистка всех форм
+			$('form').trigger('reset');
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn('slow');
+		});
+		return false;
+	});
+	//Smooth scroll up
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
 		}
 	});
-	$('#order form').validate();

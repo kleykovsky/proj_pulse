@@ -40,6 +40,9 @@
         &__descr {
             font-size: 18px;
         }
+        label.error {
+            font-size: 14px;
+        }
     }
     .title {
         font-size: 18px;
@@ -77,6 +80,9 @@
         &__close {
             left: calc(100% + 5px);
         }
+        label.error {
+            font-size: 14px;
+        }
     }
     .title_modal {
         font-size: 16px;
@@ -94,5 +100,8 @@
     .button_submit {
         font-size: 13px;
         height: 50px;
+    }
+    .pageup {
+        left: 100%;
     }
 }
