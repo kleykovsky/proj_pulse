@@ -2,17 +2,9 @@
     0% {
         transform: rotate(-20deg);
     }
-    25% {
-        transform: rotate(40deg);
-    }
     50% {
-        transform: rotate(40deg);
+        transform: rotate(20deg);
     }
-    50% {
-        transform: rotate(30deg);
-    }
-    
-    
 }
 @keyframes heartbeat {
     from {
@@ -30,15 +22,32 @@
         transform: rotate(300deg);
     }
     50% {
-        transform: rotate(390deg);
+        transform: rotate(360deg);
     }
     50% {
         transform: translate(80%);
     }
     100% {
-        transform: rotate(390deg);
+        transform: rotate(360deg);
     }
     100% {
         transform: translate(80%);
     }
 }
+// @keyframes shoerun-2 {
+//     0% {
+//         transform: rotate(300deg);
+//     }
+//     50% {
+//         transform: rotate(360deg);
+//     }
+//     50% {
+//         transform: translate(80%);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+//     100% {
+//         transform: translate(80%);
+//     }
+// }

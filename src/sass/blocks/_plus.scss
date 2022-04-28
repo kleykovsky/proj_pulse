@@ -33,6 +33,15 @@
                     animation-play-state: paused;
                 }
             }
+            &_shoe-2 {
+                position: absolute;
+                top: 30%;
+                transform: rotate(300deg);
+                animation: shoerun-2 1.8s ease infinite;
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
             &_cup {
                 transform: rotate(-20deg);
                 animation: cup 1.8s linear infinite;
