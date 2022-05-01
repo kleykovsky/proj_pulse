@@ -130,7 +130,7 @@
 			padding-left: 17px;
 			margin-bottom: 0;
 			list-style-type: none;
-			transition: 0.5s all;
+			transition: 0.8s all;
 			&_active {
 				transform: translateX(-100%);
 				margin-left: 0px;
@@ -160,9 +160,10 @@
 			font-weight: 500;
 			text-align: center;
 			text-transform: uppercase;
+			text-decoration: underline;
 			bottom: 0;
 			left: 50%;
-			transform: translateX(calc(-50% - 19px));
+			transform: translateX(calc(-50% - 13px));
 			cursor: pointer;
 			&:hover {
 				color: $main-color;

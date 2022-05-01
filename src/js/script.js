@@ -1,4 +1,5 @@
 	//Слайдер на js
+	var tns;
 (function($) {
 	$(function(){
 	const slider = tns({
@@ -94,7 +95,7 @@ function toggleSlide(item) {
 				}
 			}
 		});
-	};
+	}
 	// 3 type forms
 	validateForms('#consultation-form');
 	validateForms('#consultation form');
@@ -129,4 +130,7 @@ function toggleSlide(item) {
 			$('.pageup').fadeOut();
 		}
 	});
+	/*Библиотека для работы анимации (Показывайте 
+	анимацию CSS при прокрутке страницы вниз).*/
+	var WOW;
 	new WOW().init();
