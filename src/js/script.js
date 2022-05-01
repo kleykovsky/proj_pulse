@@ -129,3 +129,4 @@ function toggleSlide(item) {
 			$('.pageup').fadeOut();
 		}
 	});
+	new WOW().init();
