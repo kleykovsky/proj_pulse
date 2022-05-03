@@ -35,7 +35,7 @@
 	// 			$('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
 	// 	});
 	// });
-	// $('.catalog-item_back').each(function(i) {
+	// $('.catalog-item__back').each(function(i) {
 	// 	$(this).on('click', function(e) {
 	// 		e.preventDefault();
 	// 		$('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
@@ -55,7 +55,7 @@ function toggleSlide(item) {
 		});
 	}
 	toggleSlide('.catalog-item__link');
-	toggleSlide('.catalog-item_back');
+	toggleSlide('.catalog-item__back');
 	//Modal windows JS
 	$('[data-modal=consultation]').on('click', function() {
 		$('.overlay, #consultation').fadeIn('slow');
